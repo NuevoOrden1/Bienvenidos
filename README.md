@@ -1,2 +1,2 @@
 # Bienvenidos
-visualización del perfil
+...
