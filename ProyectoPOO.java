@@ -7,16 +7,29 @@ public class ProyectoPOO{
 
 }
 
+
+//import java.time.LocalDate;
 public class Producto {
     private String codigo;
     private String nombre;
-    private double valor;
+    private int cantidad;
+    private String tipo;
+    private double precio_unitario_costo;
+    private double precio_unitario_venta;
+    private int stock;
+    private LocalDate fechaDeCaducidad;
 
     // Constructor
     public Producto(String codigo, String nombre, double valor) {
         this.codigo = codigo;
         this.nombre = nombre;
-        this.valor = valor;
+        this.cantidad = cantidad;
+        this.tipo = tipo;
+        this.precio_unitario_costo = precio_unitario_costo;
+        this.precio_unitario_venta = precio_unitario_venta;
+        this.stock = stock;
+        this.fechaDeCaducidad = fechaDeCaducidad;
+        
     }
 
     // Getters y setters (puedes generarlos automáticamente en muchos IDE)
@@ -28,8 +41,28 @@ public class Producto {
         return nombre;
     }
 
-    public double getValor() {
-        return valor;
+    public int getCantidad() {
+        return cantidad;
+    }
+    
+    public String getTipo() {
+        return tipo;
+    }
+    
+    public double getPrecio_unitario_costo() {
+         return precio_unitario_costo;
+    }
+    
+    public double getPrecio_unitario_venta() {
+         return precio_unitario_venta;
+    }
+    
+    public int getStock() {
+         return stock;
+    }
+    
+    public LocalDate getFechaDeCaducidad(){
+         return fechaDeCaducidad;
     }
 
     // Otros métodos, si es necesario
