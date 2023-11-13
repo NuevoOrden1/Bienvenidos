@@ -8,7 +8,7 @@ public class ProyectoPOO{
 }
 
 public class ticket{
-import java.util.LinkedList;
+// import java.util.LinkedList;
 
 public class LinkedListRemoveExample {
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class LinkedListRemoveExample {
   
 }
 
-public class ticket{
+public class BD{
 
   
 }
