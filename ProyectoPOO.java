@@ -67,13 +67,11 @@ public class Producto {
 
     // Otros métodos, si es necesario
 }
-  
 
-public class BD{
+
 // import java.sql.*;
 // import java.util.LinkedList;
-
-
+public class BD{
         // Crear la LinkedList de Elementos
         LinkedList<Producto> listaProductos = new LinkedList<>();
 
