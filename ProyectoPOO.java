@@ -1,13 +1,36 @@
+////Clase principal que inicia la aplicación JavaFX.
+//import javafx.application.Application;
+//import javafx.fxml.FXMLLoader;
+//import javafx.scene.Scene;
+//import javafx.stage.Stage;
 public class ProyectoPOO{
   public static void main (String [] args){
-    int a;
-    float b;
-    double c;
+    launch(args);
   }
-
+@Override
+    public void start(Stage primaryStage) throws Exception {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/main.fxml"));
+        primaryStage.setScene(new Scene(loader.load()));
+        primaryStage.setTitle("Sistema de Gestión de Ventas");
+        primaryStage.show();
+    }
 }
 
 
+//Controlador principal que gestiona la ventana principal.
+//import javafx.fxml.FXML;
+//import javafx.scene.control.Button;
+public class MainController {
+    @FXML
+    private Button addProductButton;
+
+    // Métodos y lógica para la ventana principal
+}
+
+
+
+
+//Clase que representa un producto.
 //import java.time.LocalDate;
 public class Producto {
     private String codigo;
@@ -69,6 +92,25 @@ public class Producto {
 }
 
 
+
+//Controlador para la ventana de gestión de productos.
+//import javafx.fxml.FXML;
+//import javafx.scene.control.TableView;
+public class ProductController {
+    @FXML
+    private TableView<Product> productTable;
+
+    // Métodos y lógica para la gestión de productos
+}
+
+//Clase que encapsula la lógica del escáner de código de barras.
+public class BarcodeScanner {
+    // Lógica para la lectura de códigos de barras
+}
+
+
+
+//falta diseñar mejor esta clase BD
 // import java.sql.*;
 // import java.util.LinkedList;
 public class BD{
@@ -111,6 +153,9 @@ public class BD{
             e.printStackTrace();
         }  
 }
+
+
+
 
 
 public class ticket{
