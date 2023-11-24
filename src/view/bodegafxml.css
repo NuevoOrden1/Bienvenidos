@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+.miFrame{
+    -fx-background-color: linear-gradient(to right, #9ECFF0, #219DF2); /* Color de fondo */
+    height: 5px;
+    
+}
+.miBotonAnadirCarrito {
+    -fx-background-color: #4CAF50; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+}
+
+.miBotonConsultaProducto {
+    -fx-background-color: #63D6F2; /* Color de fondo */
+    -fx-text-fill: white; /* Color del texto */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+}
+
+.miBotonEmitirBoleta {
+    -fx-background-color: #E4E9EA; /* Color de fondo */
+    -fx-text-fill: black; /* Color del texto */
+    -fx-font-size: 16px; /* Tamaño de la fuente */
+}
