@@ -7,75 +7,108 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="484.0" prefWidth="694.0" styleClass="miFrame" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BodegaFXMLController">
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="1280.0" styleClass="miFrame" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BodegaFXMLController">
     <stylesheets>
         <URL value="@bodegafxml.css" />
     </stylesheets>
    <children>
-      <Label layoutX="243.0" layoutY="20.0" text="MI BODEGA">
+      <Label layoutX="431.0" layoutY="34.0" text="MI BODEGA">
+         <font>
+            <Font size="72.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="143.0" text="Ingresar código de producto">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="199.0" text="Nombre del producto">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="256.0" text="Cantidad">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="106.0" layoutY="313.0" text="Tipo">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="371.0" text="Precio unitario de costo">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="549.0" text="Precio unitario de venta">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="429.0" text="Stock">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="489.0" text="Lote / Caducidad">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfCodigo" layoutX="688.0" layoutY="145.0" prefHeight="39.0" prefWidth="262.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfNombreProducto" layoutX="687.0" layoutY="201.0" prefHeight="39.0" prefWidth="533.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfCantidad" layoutX="687.0" layoutY="258.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfTipo" layoutX="688.0" layoutY="315.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfPrecioUnitarioCosto" layoutX="688.0" layoutY="373.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfPrecioUnitarioVenta" layoutX="688.0" layoutY="551.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfStock" layoutX="688.0" layoutY="431.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <TextField fx:id="tfLote" layoutX="688.0" layoutY="491.0">
+         <font>
+            <Font size="20.0" />
+         </font></TextField>
+      <Button fx:id="btnAñadirCarrito" layoutX="110.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionAñadirACarrito" prefHeight="54.0" prefWidth="162.0" styleClass="miBotonAnadirCarrito" text="Añadir a carrito">
          <font>
             <Font size="24.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="85.0" text="Ingresar código de producto">
+         </font></Button>
+      <Button fx:id="btnConsultarProducto" layoutX="301.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionConsultarProducto" prefHeight="54.0" prefWidth="220.0" styleClass="miBotonConsultaProducto" text="Buscar">
          <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="132.0" text="Nombre del producto">
+            <Font size="24.0" />
+         </font></Button>
+      <Button fx:id="btnEmitirBoleta" layoutX="552.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionEmitirBoletaVenta" prefHeight="54.0" prefWidth="201.0" styleClass="miBotonEmitirBoleta" text="Emitir boleta de venta">
          <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="170.0" text="Cantidad">
+            <Font size="24.0" />
+         </font></Button>
+      <Label layoutX="950.0" layoutY="65.0" text="Productos en el carrito:">
          <font>
-            <Font size="14.0" />
+            <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="31.0" layoutY="204.0" text="Tipo">
+      <TextField fx:id="tfCantidadEnCarrito" editable="false" layoutX="1196.0" layoutY="60.0" prefHeight="30.0" prefWidth="53.0">
          <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="237.0" text="Precio unitario de costo">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="269.0" text="Precio unitario de venta">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="299.0" text="Stock">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="31.0" layoutY="333.0" text="Lote / Caducidad">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <TextField fx:id="tfCodigo" layoutX="218.0" layoutY="83.0" />
-      <TextField fx:id="tfNombreProducto" layoutX="218.0" layoutY="130.0" prefHeight="25.0" prefWidth="204.0" />
-      <TextField fx:id="tfCantidad" layoutX="218.0" layoutY="168.0" />
-      <TextField fx:id="tfTipo" layoutX="218.0" layoutY="202.0" />
-      <TextField fx:id="tfPrecioUnitarioCosto" layoutX="218.0" layoutY="235.0" />
-      <TextField fx:id="tfPrecioUnitarioVenta" layoutX="218.0" layoutY="267.0" />
-      <TextField fx:id="tfStock" layoutX="218.0" layoutY="297.0" />
-      <TextField fx:id="tfLote" layoutX="218.0" layoutY="331.0" />
-      <Button fx:id="btnAñadirCarrito" layoutX="59.0" layoutY="390.0" mnemonicParsing="false" onAction="#accionAñadirACarrito" styleClass="miBotonAnadirCarrito" text="Añadir a carrito">
-      </Button>
-      <Button fx:id="btnConsultarProducto" layoutX="209.0" layoutY="390.0" mnemonicParsing="false" onAction="#accionConsultarProducto" styleClass="miBotonConsultaProducto" text="Consultar otro producto">
-      </Button>
-      <Button fx:id="btnEmitirBoleta" layoutX="422.0" layoutY="390.0" mnemonicParsing="false" onAction="#accionEmitirBoletaVenta" styleClass="miBotonEmitirBoleta" text="Emitir boleta de venta">
-      </Button>
-      <Label layoutX="429.0" layoutY="28.0" text="Cantidad de productos en el carrito:">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <TextField fx:id="tfCantidadEnCarrito" editable="false" layoutX="644.0" layoutY="25.0" prefHeight="25.0" prefWidth="48.0" />
+            <Font size="16.0" />
+         </font></TextField>
    </children>
 </AnchorPane>
