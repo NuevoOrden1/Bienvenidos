@@ -93,11 +93,11 @@
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="btnConsultarProducto" layoutX="301.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionConsultarProducto" prefHeight="54.0" prefWidth="220.0" styleClass="miBotonConsultaProducto" text="Buscar">
+      <Button fx:id="btnBuscarProducto" layoutX="343.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionBuscarProducto" prefHeight="54.0" prefWidth="273.0" styleClass="miBotonConsultaProducto" text="Buscar producto">
          <font>
             <Font size="24.0" />
          </font></Button>
-      <Button fx:id="btnEmitirBoleta" layoutX="552.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionEmitirBoletaVenta" prefHeight="54.0" prefWidth="201.0" styleClass="miBotonEmitirBoleta" text="Emitir boleta de venta">
+      <Button fx:id="btnEmitirBoleta" layoutX="688.0" layoutY="628.0" mnemonicParsing="false" onAction="#accionEmitirBoletaVenta" prefHeight="54.0" prefWidth="201.0" styleClass="miBotonEmitirBoleta" text="Emitir boleta de venta">
          <font>
             <Font size="24.0" />
          </font></Button>
