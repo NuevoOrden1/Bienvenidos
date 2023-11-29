@@ -12,7 +12,7 @@
     -fx-font-size: 16px; /* Tamaño de la fuente */
 }
 
-.miBotonConsultaProducto {
+.miBotonBuscarProducto {
     -fx-background-color: #63D6F2; /* Color de fondo */
     -fx-text-fill: white; /* Color del texto */
     -fx-font-size: 16px; /* Tamaño de la fuente */
