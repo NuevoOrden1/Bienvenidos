@@ -69,7 +69,7 @@ public class BodegaFXMLController implements Initializable {
     }
 
     // Configuración de la conexión a SQLite
-    String url = "jdbc:sqlite:/home/alan/NetBeansProjects/bodegaApp/productosPrueba.db";
+    String url = "jdbc:sqlite:/home/scptx/ProyectoPOO/Bienvenidos/productosPrueba.db";
 
     try (Connection connection = DriverManager.getConnection(url)) {
         // Consulta SQL para obtener todos los campos del producto según el ID ingresado

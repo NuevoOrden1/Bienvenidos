@@ -28,9 +28,10 @@ public class BodegaApp extends Application{
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root =loader.load();
             
-            scene = new Scene(root);
-            
+            Scene scene = new Scene(root, 1200, 800);
+       
             primaryStage.setScene(scene);
+            primaryStage.setResizable(true);
             primaryStage.show();            
         } catch (IOException ex) {
             Logger.getLogger(BodegaApp.class.getName()).log(Level.SEVERE, null, ex);
